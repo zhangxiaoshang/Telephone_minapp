@@ -1,0 +1,39 @@
+{
+  "pages":[
+    "pages/welcome/welcome",
+    "pages/edit/edit",
+    "pages/manage/manage",
+    "pages/registe/registe",
+    "pages/check/check",
+    "pages/partner/partner",
+    "pages/my/my",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#b3d4db",
+    "navigationBarTitleText": "通讯录",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "backgroundColor": "#b3d4db",
+    "color": "#fff",
+    "selectedColor": "#1296db",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/partner/partner",
+        "iconPath": "images/book.png",
+        "selectedIconPath": "images/book-active.png",
+        "text": "通讯录"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "iconPath": "images/my.png",
+        "selectedIconPath": "images/my-active.png",
+        "text": "我"
+      }
+    ]
+  }
+}

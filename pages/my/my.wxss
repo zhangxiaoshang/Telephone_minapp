@@ -1,0 +1,37 @@
+/* pages/my/my.wxss */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.avatar {
+  text-align: center;
+}
+
+.avatar image {
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 50%;
+  margin: 100rpx 0;
+}
+
+.container view.item {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 60%;
+  margin: 15px auto;
+  color: #666;
+}
+
+.container view.item text:first-child {
+  width: 180rpx;
+  text-align: center;
+}
+
+button {
+  width: 90%;
+  color: #b3d4db;
+  margin: 30rpx auto;
+}

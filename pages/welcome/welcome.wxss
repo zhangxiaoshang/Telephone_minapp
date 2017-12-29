@@ -1,0 +1,6 @@
+/* pages/welcome/welcome.wxss */
+.container {
+  text-align: center;
+  margin-top: 200rpx;
+  color: #999;
+}

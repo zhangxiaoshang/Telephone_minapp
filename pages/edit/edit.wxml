@@ -1,0 +1,19 @@
+<!--pages/edit/edit.wxml-->
+<view class="container">
+  <view class='avatar'>
+    <image src='{{loginInfo.avatarUrl}}' catchtap="navigateToEdit"></image>
+  </view>
+  <form catchsubmit="formSubmit">
+    <input name="name" class="name" placeholder-class="placeholder" placeholder="输入姓名" value="{{loginInfo.name}}"></input>
+    <input name="phone" class="phone" placeholder-class="placeholder" placeholder="手机号码" value="{{loginInfo.phone}}"></input>
+    <radio-group name="gender" class="sex-container">
+      <label>
+        <radio value="0" checked="{{loginInfo.gender === 0}}" />男</label>
+      <label>
+        <radio value="1" checked="{{loginInfo.gender === 1}}" />女</label>
+    </radio-group>
+
+    <button form-type="submit" type="primary" class="submit">修改</button>
+    <button class="delete-btn" catchtap='delete'>注销</button>
+  </form>
+</view>

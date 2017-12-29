@@ -1,0 +1,24 @@
+<!--pages/check/check.wxml-->
+<view wx:if="{{checkList.length > 0}}" class="container">
+  <view class="item">
+    <text>头像</text>
+    <text>姓名</text>
+    <text>部门</text>
+    <text>审核</text>
+  </view>
+
+  <block wx:for="{{checkList}}">
+    <view class="item">
+      <text>头像</text>
+      <text>{{item.name}}</text>
+      <text>{{item.department_id}}</text>
+      <view>
+        <switch data-id="{{item.id}}" bindchange="bindchange" />
+      </view>
+    </view>
+  </block>
+</view>
+
+<view wx:else class="container"> 
+  <view class="tip">暂无申请记录</view>
+</view>

@@ -1,0 +1,18 @@
+<!--pages/partner/partner.wxml-->
+<view class="container" wx:if="{{partners && partners.length > 0}}">
+  <block wx:for="{{partners}}" wx:key="{{index}}">
+    <view class="item">
+      <view class="info">
+        <image src="{{item.avatarUrl}}"></image>
+        <view>{{item.name}}</view>
+        <view>{{item.department}}</view>
+      </view>
+      <text class="call-btn" data-phone="{{item.phone}}" catchtap="ontell">拨打</text>
+    </view>
+  </block>
+</view>
+
+<!-- 没有记录时展示  -->
+<view class="container" wx:else>
+  <view class="tip">暂无联系人，或者你的加入申请尚未通过！</view>
+</view>

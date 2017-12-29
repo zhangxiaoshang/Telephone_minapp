@@ -1,0 +1,15 @@
+<!--pages/manage/manage.wxml-->
+<view class="container" wx:if="{{list.length > 0}}">
+  <block wx:for="{{list}}" wx:key="{{index}}">
+    <view class="item">
+      <view class="info">
+        <image src="{{item.avatarUrl}}"></image>
+        <view>{{item.name}}</view>
+        <view>{{item.department}}</view>
+      </view>
+      <text class="call-btn" data-id="{{item.id}}" catchtap="delete">删除</text>
+    </view>
+  </block>
+</view>
+
+<view class="tip" wx:else>暂无数据</view>

@@ -1,0 +1,2 @@
+<!--pages/welcome/welcome.wxml-->
+<view class="container">欢迎使用通讯录</view>

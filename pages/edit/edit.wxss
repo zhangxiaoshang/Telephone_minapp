@@ -1,0 +1,56 @@
+/* pages/edit/edit.wxss */
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 100rpx 150rpx 200rpx 150rpx;
+  height: auto;
+  width: auto;
+  color: #666;
+}
+
+.avatar {
+  text-align: center;
+}
+
+.avatar image {
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 50%;
+}
+
+.container form input,
+.container form radio-group,
+.container form picker{
+  height: 50px;
+  line-height: 50px;
+}
+
+.placeholder {
+  font-size: 32rpx;
+  color: #666;
+  text-align: center;
+}
+
+.name, .phone {
+  border-bottom: 1px solid #d1d1d1;
+  margin-bottom: 20rpx;
+  text-align: center;
+}
+
+.sex-container {
+  text-align: center;
+}
+
+.sex-container label {
+  margin-right: 25rpx;
+}
+
+.submit {
+  margin: 150rpx 0 20rpx;
+}
+
+.delete-btn {
+  color: #EF5B30;
+  background: transparent;
+  border: 1px solid #EF5B30;
+}
